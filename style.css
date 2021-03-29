@@ -1,0 +1,144 @@
+*{
+    box-sizing: border-box;
+    padding : 0;
+    margin : 0;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+main{
+    min-height: 100vh;
+    background: linear-gradient(to right top,#65dfc9,#6cdbeb);
+    display : flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.glass{
+    background : linear-gradient(to right bottom,rgba(255,255,255,0.7),rgba(255,255,255,0.3));
+    min-height: 80vh;
+    width : 60%;
+    border-radius: 1rem;
+    z-index : 3;
+    backdrop-filter: blur(1rem);
+    display: flex;
+}
+
+.circle1, .circle2{
+    position: absolute;
+    width : 15rem;
+    height : 15rem;
+    background : linear-gradient(to right top,rgba(255,255,255,0.8),rgba(255,255,255,0.3));
+    border-radius: 50%;
+}
+.circle1{
+    bottom: 5%;
+    left : 10%;
+}
+.circle2{
+    top : 5%;
+    right : 10%;
+}
+.dashboard{
+    min-height: 80vh;
+    background : linear-gradient(to right,rgba(255,255,255,0.7),rgba(255,255,255,0.3));
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding : 1rem;
+    border-radius: 1rem;
+    width : 30%;
+}
+.link{
+    margin-top : 2px;
+}
+.link img{
+    width : 1rem;
+    height: 1rem;
+    display: inline-block;
+}
+
+.proImg{
+    
+    width : 3rem;
+    height: 3rem;
+    display: inline-block;
+}
+.user{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+h4{
+    font-size: 1rem;
+    font-weight: bold;
+    padding : 1px;
+}
+p{
+    color : rgb(90, 86, 86);
+    font-size : 0.75rem;
+}
+.link{
+    display: flex;
+    justify-content: space-between;
+    margin : 2rem 2rem;
+}
+h4{
+    color : #0691a7;
+}
+.link h4{
+    width : 5rem;
+    color : #0691a7;
+}
+.pro{
+    display: flex;
+    margin : 1rem;
+    padding : 1rem;
+    border-radius: 1rem;
+    background-color: #8ae1ee;
+}
+.pro h4{
+    color : white
+}
+.games{
+    padding : 2rem;
+    width : 70%;
+}
+.games h1{
+    color : #065b68;
+    font-size : 2rem;
+}
+.games input{
+    width : 100%;
+    border : none;
+    margin-top : 1rem;
+    padding : 0.45rem;
+    border-radius: 0.5rem;
+}
+.game{
+    margin-top : 1rem;
+    background-color: white;
+    padding : 1rem;
+    border-radius: 1rem;
+    display: flex;
+    justify-content: space-between;
+}
+.bar{
+    width : 100%;
+    margin-top : 1rem;
+    height : 1rem;
+    border-radius: 0.2rem;
+    background-color: rgb(189, 188, 188);
+}
+.fill{
+    width : 60%;
+    height : 1rem;
+    background-color: #065b68;
+    border-radius: 0.2rem 0 0 0.2rem;
+}
+@media screen and (max-width : 760px)
+{
+    .circle1,.circle2{
+        width : 10rem;
+        height : 10rem;
+    }
+} 
